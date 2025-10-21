@@ -1,0 +1,35 @@
+.bg-teal {
+  background-color: #4e8489;
+}
+
+ .my-text {
+    font-family: 'Taviraj', sans-serif;
+    font-size: 40px;
+  }
+   .itim-font {
+  font-family: 'Itim', cursive;
+  font-size: 20px;
+}
+.my-text {
+  color: #e5d2c4;
+}
+.im-font {
+  font-size: 3rem; 
+}
+.cabin-sketch {
+  font-family: 'Cabin Sketch', cursive;
+}
+.my-font {
+  color: #4e8489;
+}
+/* เพิ่มคลาสใหม่สำหรับเปลี่ยนสีฟอนต์ */
+.text-teal {
+  color: #4e8489;
+}
+
+.text-custom {
+  color: #4e8489 !important;
+}
+
+  
+
