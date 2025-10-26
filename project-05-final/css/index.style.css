@@ -1,0 +1,205 @@
+.bg-teal {
+  background-color: #4e8489;
+}
+
+ .my-text {
+    font-family: 'Taviraj', sans-serif;
+    font-size: 40px;
+  }
+   .itim-font {
+  font-family: 'Itim', cursive;
+  font-size: 20px;
+}
+.my-text {
+  color: #e5d2c4;
+}
+.im-font {
+  font-size: 3rem; 
+}
+.cabin-sketch {
+  font-family: 'Cabin Sketch', cursive;
+}
+.my-font {
+  color: #4e8489;
+}
+/* เพิ่มคลาสใหม่สำหรับเปลี่ยนสีฟอนต์ */
+.text-teal {
+  color: #4e8489;
+}
+
+.text-custom {
+  color: #4e8489 !important;
+}
+
+.indent-paragraph {
+  text-indent: 2em; /* ขยับวรรคแรกเข้าไป 2 ตัวอักษร */
+  line-height: 1.8;  /* เพิ่มระยะห่างระหว่างบรรทัดให้อ่านง่าย */
+}
+
+/* ส่วนพื้นหลังเต็มหน้าจอ */
+.author-fullscreen {
+  background-color: #4e8489;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* กล่องเนื้อหา */
+.about-author {
+  text-align: center;
+  max-width: 600px;
+}
+
+/* หัวข้อ */
+.about-author h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* เส้นคั่นสีเหลือง */
+.divider {
+  width: 1000px;
+  height: 4px;
+  background-color: #f4c542;
+  margin: 0 auto 20px;
+}
+
+/* เนื้อหา */
+.about-author p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+  .about-author h1 {
+    font-size: 32px;
+  }
+
+  .about-author p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .divider {
+    width: 40px;
+    height: 3px;
+  }
+}
+
+.divider {
+  width: 100px;
+  height: 4px;
+  background-color: #f4c542;
+  margin: 0 auto 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.rating-summary {
+  max-width: 400px;
+  margin: 30px 0 30px 20px; /* ขยับจากซ้าย 20px */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left; /* จัดข้อความชิดซ้าย */
+}
+
+.rating-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0b1f3a;
+}
+
+.stars {
+  font-size: 24px;
+  color: #f4c542;
+  letter-spacing: 2px;
+}
+
+.count {
+  font-size: 16px;
+  color: #888;
+}
+
+.rating-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.star-label {
+  font-size: 18px;
+  color: #f4c542;
+  width: 20px;
+  text-align: center;
+}
+
+.bar {
+  flex: 1;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar.full::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f4c542;
+}
+
+.bar.empty::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #f4c542;
+}
+
+.percent {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  width: 40px;
+  text-align: right;
+}
+
+
+
